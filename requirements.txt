@@ -1,0 +1,13 @@
+# Entorno principal (.venv_nnunet, Python 3.12): pipeline, segmentación, andamio, FEA y evaluación.
+# Versiones tomadas del entorno con el que se obtuvieron los resultados del Trabajo de Grado.
+# torch: instalar antes la versión con CUDA que corresponda a la GPU (https://pytorch.org).
+numpy==2.5.3
+scipy==1.18.1
+SimpleITK==2.5.6
+nibabel==5.4.2
+pandas==3.0.6
+matplotlib==3.11.2
+scikit-image==0.26.0
+scikit-learn==1.9.1
+torch==2.14.1
+nnunetv2==2.8.1

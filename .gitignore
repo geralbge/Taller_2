@@ -1,28 +1,39 @@
-# Entorno virtual
+# Entornos
 .venv/
-
-# Caché de Python
+.venv_nnunet/
 __pycache__/
 *.py[cod]
-*$py.class
 
-# Jupyter
-.ipynb_checkpoints/
+# Datos de imagen y máscaras: NUNCA se suben (TC de pacientes, Fischer, DRYAD)
+data/
+*.dcm
+*.nii
+*.nii.gz
+*.nrrd
+*.mha
+*.mhd
+*.zip
 
-# Datos médicos - NO subir al repositorio
-data/raw/
-data/processed/
-
-# Modelos entrenados - pueden ser demasiado grandes
+# Pesos de modelos y resultados generados
 models/
-
-# Resultados generados
-results/
-
-# Archivos temporales
-*.tmp
+nnUNet_raw/
+nnUNet_preprocessed/
+nnUNet_results/
+*.pth
+*.npz
+*.stl
+*.ply
+*.vtk
+*.feb
+*.xplt
 *.log
+results/**/trabajo*/
+resultados_ft/**/benchmark*/
+src/finetune/benchmark_v2_f0/
 
-# Configuración local
+# Puntos de Slicer (pueden contener rutas o nombres de serie)
+*.mrk.json
+
+# Local
 .env
 .vscode/
